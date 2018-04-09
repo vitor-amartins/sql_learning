@@ -19,7 +19,7 @@ CREATE TABLE Curso (
 	nome VARCHAR2(30) NOT NULL,
 	nota_mec NUMBER(4,2),
 	CONSTRAINT curso_pk PRIMARY KEY (codigo),
-	CONSTRAINT curso_ck CHECK (nota_mec >= 0) AND (nota_mec <= 10)
+	CONSTRAINT curso_ck CHECK (nota_mec >= 0 AND nota_mec <= 10)
 );
 
 CREATE TABLE Bacharelado (
@@ -110,14 +110,14 @@ CREATE TABLE Cursa (
 	CONSTRAINT cursa_pk PRIMARY KEY (cpf_aluno, codigo_disc),
 	CONSTRAINT cursa_fk1 FOREIGN KEY (cpf_aluno) REFERENCES Aluno(cpf_aluno),
 	CONSTRAINT cursa_fk2 FOREIGN KEY (codigo_disc) REFERENCES Disciplina(codigo_disc),
-	CONSTRAINT cursa_ck CHECK (media >= 0) AND (media <= 10)
+	CONSTRAINT cursa_ck CHECK (media >= 0 AND media <= 10)
 );
 
 CREATE TABLE Aula (
 	codigo_sala NUMBER,
 	cpf_aluno NUMBER,
 	cpf_professor NUMBER,
-	horario SYSDATE,
+	horario TIMESTAMP,
 	CONSTRAINT aula_pk PRIMARY KEY (codigo_sala, cpf_aluno, cpf_professor, horario),
 	CONSTRAINT aula_fk1 FOREIGN KEY (codigo_sala) REFERENCES Sala(codigo),
 	CONSTRAINT aula_fk2 FOREIGN KEY (cpf_aluno) REFERENCES Aluno(cpf_aluno),

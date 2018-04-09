@@ -20,16 +20,16 @@ INSERT INTO Endereco(cep, descricao) VALUES (00060, 'Rua de Baixo');
 INSERT INTO Endereco(cep, descricao) VALUES (00080, 'Rua Esburacada');
 INSERT INTO Endereco(cep, descricao) VALUES (57020, 'Rua Formosa');
 
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (0000, to_date('19980407', 'yyyymmdd'), 001, NULL, 'Vitor', 00020);
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (1111, to_date('19980326', 'yyyymmdd'), 006, 0000, 'Maria', 57020);
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (2222, to_date('19980607', 'yyyymmdd'), 003, 1111, 'Lucas', 00080);
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (3333, to_date('19980825', 'yyyymmdd'), 002, 2222, 'Allex', 00040);
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (4444, to_date('19981113', 'yyyymmdd'), 005, 1111, 'Karol', 00000);
-INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (5555, to_date('19990102', 'yyyymmdd'), 004, 0000, 'Sammy', 00060);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (0000, to_date('07/04/1998', 'dd/mm/yyyy'), 001, NULL, 'Vitor', 00020);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (1111, to_date('26/03/1998', 'dd/mm/yyyy'), 006, 0000, 'Maria', 57020);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (2222, to_date('07/06/1998', 'dd/mm/yyyy'), 003, 1111, 'Lucas', 00080);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (3333, to_date('25/08/1998', 'dd/mm/yyyy'), 002, 2222, 'Allex', 00040);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (4444, to_date('13/11/1998', 'dd/mm/yyyy'), 005, 1111, 'Karol', 00000);
+INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (5555, to_date('02/01/1999', 'dd/mm/yyyy'), 004, 0000, 'Sammy', 00060);
 
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (0101, to_date('19900229', 'yyyymmdd'), 'Roberval');
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (1212, to_date('19870321', 'yyyymmdd'), 'Cresovil');
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (2323, to_date('19701219', 'yyyymmdd'), 'Josueldo');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (0101, to_date('29/02/1990', 'dd/mm/yyyy'), 'Roberval');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (1212, to_date('21/03/1987', 'dd/mm/yyyy'), 'Cresovil');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (2323, to_date('19/12/1972', 'dd/mm/yyyy'), 'Josueldo');
 
 INSERT INTO Email(email, cpf_professor) VALUES ('roberval@sexy.com', 0101);
 INSERT INTO Email(email, cpf_professor) VALUES ('cresovil@sexy.com', 1212);
@@ -53,9 +53,9 @@ INSERT INTO Sala(codigo, capacidade, centro) VALUES (013, 120, 'Área 2');
 INSERT INTO Sala(codigo, capacidade, centro) VALUES (015, 110, 'Área 2');
 INSERT INTO Sala(codigo, capacidade, centro) VALUES (112, 050, 'CIN');
 
-INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (01, to_date('20180219'), 'IoT', 0000);
-INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (02, to_date('20180219'), 'TNA', 1111);
-INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (03, to_date('20180219'), 'PSB', 5555);
+INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (01, to_date('19/02/2018', 'dd/mm/yyyy'), 'IoT', 0000);
+INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (02, to_date('19/02/2017', 'dd/mm/yyyy'), 'TNA', 1111);
+INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (03, to_date('19/02/2016', 'dd/mm/yyyy'), 'PSB', 5555);
 
 INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (0101, 'LMS', 'Learning Management Systems', 200000.00);
 INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (1212, 'WTF', 'Wake Taller Faster', 150000.00);
