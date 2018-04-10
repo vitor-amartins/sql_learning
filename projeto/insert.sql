@@ -69,9 +69,13 @@ INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (03, to_date('19/02/20
 
 INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (77, 'LMS', 'Learning Management Systems', 200000.00);
 INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (22, 'OTI', 'Otimization', 15000.00);
+INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (66, 'GIT', 'Code Analytics', 100000.00);
 
-INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (0000, 1, 9.85);
+INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (0000, 1, 10.0);
+INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (0000, 2, 9.50);
 INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (2222, 5, 8.50);
+INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (2222, 1, 5.00);
+INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (4444, 10, 4.00);
 
 alter session set nls_timestamp_format = 'dd/mm/yyyy hh24:mi:ss.ff';
 

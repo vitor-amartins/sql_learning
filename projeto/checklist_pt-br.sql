@@ -37,3 +37,35 @@ SELECT nome FROM P_NomeEmail GROUP BY nome HAVING COUNT(nome) > 1;
 -- 9
 -- Deleta a view.
 DROP VIEW P_NomeEmail;
+
+-- 15
+-- Adiciona a coluna cr na tabela Aluno.
+ALTER TABLE Aluno ADD cr NUMBER(4,2);
+
+-- 14
+-- Modifica o tipo da coluna cr da tabela Aluno.
+ALTER TABLE Aluno MODIFY cr VARCHAR2(10);
+
+-- 16
+-- Deleta a coluna cr da tabela Aluno.
+ALTER TABLE Aluno DROP COLUMN cr;
+
+-- 17
+-- Exibe o nome, o cpf e a média geral de cada aluno.
+SELECT A.nome, AVG(C.media) AS Media_Geral FROM Aluno A, Cursa C WHERE A.cpf_aluno = C.cpf_aluno GROUP BY A.nome;
+
+-- 20
+-- Exibe o nome de todos os alunos que cursam alguma disciplina.
+SELECT DISTINCT A.nome FROM Aluno A, Cursa C WHERE C.cpf_aluno = A.cpf_aluno;
+
+-- 39
+-- Deleta da tabela Cursa as entradas em que a média da entrada é menor que a média daquela respectiva disciplina.
+DELETE FROM Cursa C1 WHERE C1.media < (SELECT AVG(C2.media) FROM Cursa C2 WHERE C1.codigo_disc = C2.codigo_disc);
+
+-- 42
+-- Exibe a maior média geral dos alunos.
+SELECT MAX(Media_Geral) AS Maior_CR FROM (SELECT A.nome, AVG(C.media) AS Media_Geral FROM Aluno A, Cursa C WHERE A.cpf_aluno = C.cpf_aluno GROUP BY A.nome);
+
+-- 17, 18, 43
+-- Exibe a diferença entre o valor do investimento no projeto e a média total dos investimentos de todos os projetos.
+SELECT P.titulo, (P.investimento - (SELECT AVG(investimento) FROM Projeto)) AS DIFF_FROM_AVG FROM Projeto P;
