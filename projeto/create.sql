@@ -1,16 +1,16 @@
-DROP TABLE Curso;
-DROP TABLE Bacharelado;
-DROP TABLE Licenciatura;
-DROP TABLE Endereco;
-DROP TABLE Aluno;
-DROP TABLE Professor;
-DROP TABLE Email;
-DROP TABLE Disciplina;
-DROP TABLE Sala;
-DROP TABLE Ic;
-DROP TABLE Projeto;
-DROP TABLE Cursa;
 DROP TABLE Aula;
+DROP TABLE Cursa;
+DROP TABLE Projeto;
+DROP TABLE Ic;
+DROP TABLE Sala;
+DROP TABLE Disciplina;
+DROP TABLE Email;
+DROP TABLE Professor;
+DROP TABLE Aluno;
+DROP TABLE Endereco;
+DROP TABLE Licenciatura;
+DROP TABLE Bacharelado;
+DROP TABLE Curso;
 
 -------------------------
 
