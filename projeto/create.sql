@@ -75,7 +75,7 @@ CREATE TABLE Disciplina (
 	cpf_professor NUMBER NOT NULL,
 	nome VARCHAR2(30)  NOT NULL,
 	CONSTRAINT disciplina_pk PRIMARY KEY (codigo_disc),
-	CONSTRAINT disciplina_fk FOREIGN KEY (cpf_professor) REFERENCES Professor(cpf_professor),
+	CONSTRAINT disciplina_fk FOREIGN KEY (cpf_professor) REFERENCES Professor(cpf_professor)
 );
 
 CREATE TABLE Sala (
