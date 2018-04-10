@@ -71,7 +71,7 @@ CREATE TABLE Email (
 
 CREATE TABLE Disciplina (
 	codigo_disc NUMBER,
-	qnt_alunos NUMBER NOT NULL,
+	qnt_alunos NUMBER,				-- We'll can update this info later, when inserting in table Cursa
 	cpf_professor NUMBER NOT NULL,
 	nome VARCHAR2(30)  NOT NULL,
 	CONSTRAINT disciplina_pk PRIMARY KEY (codigo_disc),

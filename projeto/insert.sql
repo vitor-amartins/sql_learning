@@ -27,23 +27,33 @@ INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) V
 INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (4444, to_date('13/11/1998', 'dd/mm/yyyy'), 005, 1111, 'Karol', 00000);
 INSERT INTO Aluno(cpf_aluno, data_nasc, codigo_curso, cpf_padrinho, nome, cep) VALUES (5555, to_date('02/01/1999', 'dd/mm/yyyy'), 004, 0000, 'Sammy', 00060);
 
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (0101, to_date('29/02/1990', 'dd/mm/yyyy'), 'Roberval');
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (1212, to_date('21/03/1987', 'dd/mm/yyyy'), 'Cresovil');
-INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (2323, to_date('19/12/1972', 'dd/mm/yyyy'), 'Josueldo');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (11, to_date('28/02/1990', 'dd/mm/yyyy'), 'ACM');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (22, to_date('21/03/1987', 'dd/mm/yyyy'), 'RMAS');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (33, to_date('19/12/1972', 'dd/mm/yyyy'), 'PSGMN');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (44, to_date('09/10/1965', 'dd/mm/yyyy'), 'Romena');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (55, to_date('14/07/1978', 'dd/mm/yyyy'), 'Américo');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (66, to_date('23/05/1980', 'dd/mm/yyyy'), 'Castor');
+INSERT INTO Professor(cpf_professor, data_nasc, nome) VALUES (77, to_date('02/06/1985', 'dd/mm/yyyy'), 'ASG');
 
-INSERT INTO Email(email, cpf_professor) VALUES ('roberval@sexy.com', 0101);
-INSERT INTO Email(email, cpf_professor) VALUES ('cresovil@sexy.com', 1212);
-INSERT INTO Email(email, cpf_professor) VALUES ('ovil1234@sexy.com', 1212);
-INSERT INTO Email(email, cpf_professor) VALUES ('josueldo@sexy.com', 2323);
+INSERT INTO Email(email, cpf_professor) VALUES ('acm@cin.ufpe.br', 11);
+INSERT INTO Email(email, cpf_professor) VALUES ('rmas@cin.ufpe.br', 22);
+INSERT INTO Email(email, cpf_professor) VALUES ('psgmn@cin.ufpe.br', 33);
+INSERT INTO Email(email, cpf_professor) VALUES ('romena@ufpe.br', 44);
+INSERT INTO Email(email, cpf_professor) VALUES ('americo@ufpe.br', 55);
+INSERT INTO Email(email, cpf_professor) VALUES ('castor@cin.ufpe.br', 66);
+INSERT INTO Email(email, cpf_professor) VALUES ('fjclf@cin.ufpe.br', 66);
+INSERT INTO Email(email, cpf_professor) VALUES ('asg@cin.ufpe.br', 77);
 
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (1, 0, 0101, 'Programação');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (2, 0, 1212, 'História da Arquitetura');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (3, 0, 2323, 'Cálculo I');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (4, 0, 2323, 'Cálculo II');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (5, 0, 2323, 'Cálculo III');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (6, 0, 2323, 'Física I');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (7, 0, 2323, 'Física II');
-INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (8, 0, 2323, 'Física III');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (01, 0050, 11, 'IP');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (02, 0050, 33, 'AVLC');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (03, 0020, 66, 'Desenvolvimento iOS');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (04, 0050, 44, 'Cálculo I');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (05, null, 44, 'Cálculo II');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (06, null, 44, 'Cálculo III');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (07, null, 55, 'Física I');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (08, null, 55, 'Física II');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (09, null, 55, 'Física III');
+INSERT INTO Disciplina(codigo_disc, qnt_alunos, cpf_professor, nome) VALUES (10, 0030, 22, 'Métodos Numéricos');
 
 INSERT INTO Sala(codigo, capacidade, centro) VALUES (002, 050, 'CCEN');
 INSERT INTO Sala(codigo, capacidade, centro) VALUES (003, 060, 'CCEN');
@@ -57,10 +67,13 @@ INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (01, to_date('19/02/20
 INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (02, to_date('19/02/2017', 'dd/mm/yyyy'), 'TNA', 1111);
 INSERT INTO Ic(codigo, data_inic, tema, cpf_aluno) VALUES (03, to_date('19/02/2016', 'dd/mm/yyyy'), 'PSB', 5555);
 
-INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (0101, 'LMS', 'Learning Management Systems', 200000.00);
-INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (1212, 'WTF', 'Wake Taller Faster', 150000.00);
+INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (77, 'LMS', 'Learning Management Systems', 200000.00);
+INSERT INTO Projeto(cpf_professor, titulo, descricao, investimento) VALUES (22, 'OTI', 'Otimization', 15000.00);
 
 INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (0000, 1, 9.85);
 INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (2222, 5, 8.50);
 
-INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (013, 2222, 2323, SYSDATE());
+alter session set nls_timestamp_format = 'dd/mm/yyyy hh24:mi:ss.ff';
+
+INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (004, 2222, 33, '12/04/2018 10:00:00.00');
+INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (004, 2222, 33, '10/04/2018 08:00:00.00');
