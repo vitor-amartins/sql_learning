@@ -52,7 +52,7 @@ CREATE TABLE Aluno (
 	CONSTRAINT aluno_pk PRIMARY KEY (cpf_aluno),
 	CONSTRAINT aluno_fk1 FOREIGN KEY (cpf_padrinho) REFERENCES Aluno(cpf_aluno),
 	CONSTRAINT aluno_fk2 FOREIGN KEY (codigo_curso) REFERENCES Curso(codigo),
-	CONSTRAINT aluno_fk2 FOREIGN KEY (cep) REFERENCES Endereco(cep)
+	CONSTRAINT aluno_fk3 FOREIGN KEY (cep) REFERENCES Endereco(cep)
 );
 
 CREATE TABLE Professor (
