@@ -23,8 +23,8 @@ SELECT nome FROM Disciplina WHERE nome LIKE 'F%';
 SELECT nome FROM Aluno WHERE cpf_aluno IN (SELECT cpf_aluno FROM Ic);
 
 -- 5
--- Exibe o código e o nome das disiciplinas em que a quantidade de alunos é NULL
-SELECT codigo_disc, nome FROM Disciplina WHERE qnt_alunos IS NULL;
+-- Exibe o nome dos alunos que não possuem padrinhos
+SELECT nome FROM Aluno WHERE cpf_padrinho IS NULL;
 
 -- 7, 24
 -- Cria uma view com o nome e um email de cada professor.
