@@ -79,5 +79,7 @@ INSERT INTO Cursa(cpf_aluno, codigo_disc, media) VALUES (4444, 10, 4.00);
 
 alter session set nls_timestamp_format = 'dd/mm/yyyy hh24:mi:ss.ff';
 
+INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (003, 2222, 11, '12/04/2018 08:00:00.00');
 INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (004, 2222, 33, '12/04/2018 10:00:00.00');
 INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (004, 2222, 33, '10/04/2018 08:00:00.00');
+INSERT INTO Aula(codigo_sala, cpf_aluno, cpf_professor, horario) VALUES (003, 2222, 11, '10/04/2018 10:00:00.00');
