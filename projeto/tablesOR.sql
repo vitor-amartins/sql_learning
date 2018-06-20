@@ -1,3 +1,19 @@
+DROP TABLE tb_Aula;
+DROP TABLE tb_Cursa;
+DROP TABLE tb_Projeto;
+DROP TABLE tb_Ic;
+DROP TABLE tb_Sala;
+DROP TABLE tb_Disciplina;
+DROP TABLE tb_Email;
+DROP TABLE tb_Professor;
+DROP TABLE tb_Aluno;
+DROP TABLE tb_Endereco;
+DROP TABLE tb_Licenciatura;
+DROP TABLE tb_Bacharelado;
+DROP TABLE tb_Curso;
+
+--
+
 CREATE TABLE tb_Curso OF tp_Curso (
     codigo PRIMARY KEY,
     nome NOT NULL,
