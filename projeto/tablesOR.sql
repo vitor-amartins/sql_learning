@@ -49,7 +49,7 @@ CREATE TABLE tb_Professor OF tp_Professor (
     cpf_professor PRIMARY KEY,
     data_nasc NOT NULL,
     nome NOT NULL,
-    emails NOT NULL
+    emails
 );
 /
 

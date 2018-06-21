@@ -181,7 +181,6 @@ CREATE OR REPLACE TYPE BODY tp_Cursa AS
 END;
 /
 
-
 CREATE OR REPLACE TYPE tp_Aula AS OBJECT(
     codigo_sala NUMBER,
     cpf_aluno NUMBER,
