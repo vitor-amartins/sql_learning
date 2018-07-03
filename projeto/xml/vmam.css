@@ -1,0 +1,56 @@
+* {
+    background: url("back.jpg") center fixed;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    margin: 0 auto;
+    text-align: center;
+}
+
+Aluno {
+    display: block;
+    background-color: #000;
+    text-align: center;
+    width: 500px;
+    margin: 20px;
+    background: url("sith.jpg") center;
+    background-size: cover;
+    padding: 20px;
+}
+
+cpf_aluno {
+    padding: 5px;
+    display: block;
+    font-family: 'VT323', monospace;
+    color: black;
+    background: #FFFA;
+}
+
+data_nasc {
+    padding: 5px;
+    display: block;
+    color: black;
+    background: #FFFA;
+}
+
+codigo_curso {
+    padding: 5px;
+    display: block;
+    font-family: 'VT323', monospace;
+    color: black;
+    background: #FFFA;
+}
+
+nome {
+    padding: 5px;
+    display: block;
+    color: black;
+    background: #FFFA;
+    font-size: 1.5em;
+}
+
+cep {
+    padding: 5px;
+    display: block;
+    color: black;
+    background: #FFFA;
+}

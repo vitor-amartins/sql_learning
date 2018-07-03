@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="vmam.css"?>
+<!DOCTYPE Alunos SYSTEM "vmam.dtd">
+
+<Alunos>
+    <Aluno>
+        <cpf_aluno>0000</cpf_aluno>
+        <data_nasc>07/04/1998</data_nasc>
+        <codigo_curso>001</codigo_curso>
+        <nome>Vitor</nome>
+        <cep>00020</cep>
+    </Aluno>
+
+    <Aluno>
+        <cpf_aluno>1111</cpf_aluno>
+        <data_nasc>26/03/1998</data_nasc>
+        <codigo_curso>006</codigo_curso>
+        <nome>Maria</nome>
+        <cep>57020</cep>
+    </Aluno>
+
+    <Aluno>
+        <cpf_aluno>2222</cpf_aluno>
+        <data_nasc>07/06/1998</data_nasc>
+        <codigo_curso>003</codigo_curso>
+        <nome>Lucas</nome>
+        <cep>00080</cep>
+    </Aluno>
+
+    <Aluno>
+        <cpf_aluno>3333</cpf_aluno>
+        <data_nasc>25/08/1998</data_nasc>
+        <codigo_curso>002</codigo_curso>
+        <nome>Allex</nome>
+        <cep>00040</cep>
+    </Aluno>
+
+    <Aluno>
+        <cpf_aluno>4444</cpf_aluno>
+        <data_nasc>13/11/1998</data_nasc>
+        <codigo_curso>005</codigo_curso>
+        <nome>Karol</nome>
+        <cep>00000</cep>
+    </Aluno>
+
+    <Aluno>
+        <cpf_aluno>5555</cpf_aluno>
+        <data_nasc>02/01/1999</data_nasc>
+        <codigo_curso>004</codigo_curso>
+        <nome>Sammy</nome>
+        <cep>00060</cep>
+    </Aluno>
+</Alunos>

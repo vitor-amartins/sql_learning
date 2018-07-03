@@ -1,0 +1,7 @@
+<!ELEMENT Alunos (Aluno)+>
+<!ELEMENT Aluno (cpf_aluno, data_nasc, codigo_curso, nome, cep)>
+<!ELEMENT cpf_aluno (#PCDATA)>
+<!ELEMENT data_nasc (#PCDATA)>
+<!ELEMENT codigo_curso (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cep (#PCDATA)>
